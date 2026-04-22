@@ -217,10 +217,9 @@ sentence_transformers
 
 ---
 
-# 🌈 **1. Project Banner (Markdown)**
+#  **1. Project Banner (Markdown)**
 
 
-```md
 <h1 align="center">🔮 RAG & Chatbot Playground</h1>
 <h3 align="center">LangChain • Groq • FAISS • Streamlit • Open-Source LLMs</h3>
 
@@ -229,37 +228,27 @@ sentence_transformers
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/LangChain-RAG-blue" />
-  <img src="https://img.shields.io/badge/FAISS-VectorDB-green" />
-  <img src="https://img.shields.io/badge/Groq-LLMs-orange" />
-  <img src="https://img.shields.io/badge/Streamlit-UI-red" />
-  <img src="https://img.shields.io/badge/OpenSource-Models-yellow" />
+  <img src="[https://img.shields.io/badge/LangChain-RAG-blue](https://img.shields.io/badge/LangChain-RAG-blue)" />
+  <img src="[https://img.shields.io/badge/FAISS-VectorDB-green](https://img.shields.io/badge/FAISS-VectorDB-green)" />
+  <img src="[https://img.shields.io/badge/Groq-LLMs-orange](https://img.shields.io/badge/Groq-LLMs-orange)" />
+  <img src="[https://img.shields.io/badge/Streamlit-UI-red](https://img.shields.io/badge/Streamlit-UI-red)" />
+  <img src="[https://img.shields.io/badge/OpenSource-Models-yellow](https://img.shields.io/badge/OpenSource-Models-yellow)" />
 </p>
-```
 
+---
 ---
 
 
 
 ```md
-## 🎨 Streamlit Interface Preview
-
-> *(Add your screenshot into the repo at `images/ui.png` or `images/app.png`)*
-
-![Streamlit UI](images/ui.png)
-```
-
 
 
 ---
+# 🧠 **2. Architecture Diagram (Mermaid + ASCII)** 
 
-# 🧠 **3. Architecture Diagram (Mermaid + ASCII)**
-
-
-
-````md
 ## 🧬 System Architecture
 
+### 📊 Mermaid Diagram
 ```mermaid
 flowchart TD
     A[User Query] --> B[Retriever]
@@ -270,26 +259,21 @@ flowchart TD
     F --> C
     B --> G[LLM Model<br/>(Groq / Mistral / Gemma / Phi)]
     G --> H[Final Response]
-````
-
-```
 
 ### **ASCII Diagram (if viewer doesn’t support Mermaid)**
 
 ```
-
 User Query
-|
-Retriever ----- Document Loaders (PDF/TXT/Web/Wiki)
-|                     |
-|                 Text Splitter
-|                     |
+          |
+      Retriever ----- Document Loaders (PDF/TXT/Web/Wiki)
+          |                   |
+          |               Text Splitter
+          |                   |
 FAISS Vector Store <--- Embeddings (Sentence Transformers)
-|
-LLM Model (Groq / Mistral / Gemma / Phi)
-|
-Final Response
-
+          |
+    LLM Model (Groq / Mistral / Gemma / Phi)
+          |
+    Final Response
 ```
 
 ---
